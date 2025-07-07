@@ -1,4 +1,4 @@
-### ✅ Create a valid user
+## Create a valid user
 POST http://localhost:5000/users
 Content-Type: application/json
 
@@ -9,7 +9,7 @@ Content-Type: application/json
   "userEmail": "charlie@example.com"
 }
 
-### ❌ Create a user with missing name
+## Create a user with missing name
 POST http://localhost:5000/users
 Content-Type: application/json
 
@@ -20,7 +20,7 @@ Content-Type: application/json
   "userEmail": "no-name@example.com"
 }
 
-### ❌ Create a user with invalid email
+## Create a user with invalid email
 POST http://localhost:5000/users
 Content-Type: application/json
 
@@ -31,7 +31,7 @@ Content-Type: application/json
   "userEmail": "not-an-email"
 }
 
-### ❌ Create a user that already exists
+## Create a user that already exists
 POST http://localhost:5000/users
 Content-Type: application/json
 
@@ -42,16 +42,16 @@ Content-Type: application/json
   "userEmail": "alice@duplicate.com"
 }
 
-### ✅ Get all users
+## Get all users
 GET http://localhost:5000/users
 
-### ✅ Get user by ID (existing)
+## Get user by ID (existing)
 GET http://localhost:5000/users/1
 
-### ❌ Get user by ID (non-existent)
+## Get user by ID (non-existent)
 GET http://localhost:5000/users/999
 
-### ✅ Update existing user
+## Update existing user
 PUT http://localhost:5000/users/2
 Content-Type: application/json
 
@@ -62,7 +62,7 @@ Content-Type: application/json
   "userEmail": "bob.updated@example.com"
 }
 
-### ❌ Update user with invalid data
+## Update user with invalid data
 PUT http://localhost:5000/users/2
 Content-Type: application/json
 
@@ -73,7 +73,7 @@ Content-Type: application/json
   "userEmail": "invalid"
 }
 
-### ❌ Update non-existent user
+## Update non-existent user
 PUT http://localhost:5000/users/999
 Content-Type: application/json
 
@@ -84,12 +84,12 @@ Content-Type: application/json
   "userEmail": "ghost@example.com"
 }
 
-### ✅ Delete existing user
+## Delete existing user
 DELETE http://localhost:5000/users/3
 
-### ❌ Delete non-existent user
+## Delete non-existent user
 DELETE http://localhost:5000/users/999
 
 
-### ❌ Trigger not found error
+## Trigger not found error
 GET http://localhost:5000/unhandled
