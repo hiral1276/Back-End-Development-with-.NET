@@ -1,4 +1,4 @@
-# UserManagementAPI
+# Working with API
 User Management API  using ASP.NET Core 
 
 ## 1) Code architecture
@@ -60,8 +60,4 @@ Type in value text box : Bearer followed by one space bar and then paste the tok
 Then click on Authorize then on Close.
 
 ![](img/swagger_img_05.png)
-
-Your are now ready to test the API's endpoints.
-
-Note that whenever you run the logout endpoints the token is unvalidated and you have to login to get a new authentication
 
